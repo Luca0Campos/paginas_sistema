@@ -1,2 +1,4 @@
 # paginas_sistema
-páginas em html,css e javascript para integrar a plataforma
+páginas em html,css e javascript para integrar a plataforma da empresa.
+
+em andamento...
