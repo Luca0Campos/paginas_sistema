@@ -1,0 +1,774 @@
+<html>
+    <head>
+        <title> TI: Análise de Cookies do Usuário </title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: black;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;
+
+        }
+
+
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+
+        #art{
+            float: right;
+            
+        }
+
+
+        .container{
+            display: flex;
+            padding-top: 2%;
+        }
+        #campo0{
+            width: 25%;
+            display: inline-block;
+        }
+
+        #campo{
+            width: 25%;
+            display: inline-block;
+        }
+        #campo1{
+            width: 25%;
+            display: inline-block;
+            
+        }
+        #campo2_1{
+            
+            display: inline-block;
+        }
+        #campo2_2{
+            display: inline-block;
+        }
+        #campo2_3{
+            
+            display: inline-block;
+        }
+        #campo2_4{
+            
+            display: inline-block;
+        }
+        
+          
+        
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>TI: Análise de Cookies do Usuário</h3>
+            </div>
+
+            
+            
+            <div class="container">
+
+                <div id="campo0">
+                
+                    <input type="checkbox" id="end_ip" name="end_ip" value="Endereço IP" >
+                    <label for="end_ip"> <strong> Endereço IP</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+              
+
+                    <input type="checkbox" id="geolocalizacao" name="geolocalizacao" value="Geolocalização" >
+                    <label for="geolocalizacao"> <strong>Geolocalização</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="data_hora_requisicao" name="data_hora_requisicao" value="Data e Hora da Requisição" >
+                    <label for="data_hora_requisicao"> <strong> Data e Hora da Requisição </strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                
+                    <input type="checkbox" id="titulo_pag_visitada" name="titulo_pag_visitada" value="Titulo da Página Visitada" >
+                    <label for="titulo_pag_visitada"> <strong> Titulo da Página Visitada</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+            
+                    <input type="checkbox" id="url_pag_visitada" name="url_pag_visitada" value="URL da Página Visitada" >
+                    <label for="url_pag_visitada"> <strong> URL da Página Visitada</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="url_pag_visitada_aterior" name="url_pag_visitada_aterior" value="URL da Página Visitada Anteriormente" >
+                    <label for="url_pag_visitada_aterior"> <strong> URL da Página Visitada Anteriormente</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="resolucao_dispositivo" name="resolucao_dispositivo" value="Resolução de Tela do Dispositivo do Usuário" >
+                    <label for="resolucao_dispositivo"> <strong> Resolução de Tela do Dispositivo do Usuário</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="data_hora_fuso_horario" name="data_hora_fuso_horario" value="Data e Hora do Fuso horário Local do Dispisitivo do Usuário " >
+                    <label for="data_hora_fuso_horario"> <strong> Data e Hora do Fuso horário Local do Dispisitivo do Usuário</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="arquivos_baixados" name="arquivos_baixados" value="Arquivos que Foram Clicados e Baixados" >
+                    <label for="arquivos_baixados"> <strong> Arquivos que Foram Clicados e Baixados</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="links_dominio_externo" name="links_dominio_externo" value="Links para um Domínio Externo que Foram Clicados e Baixados" >
+                    <label for="links_dominio_externo"> <strong> Links para um Domínio Externo que Foram Clicados e Baixados</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="tempo_url" name="tempo_url" value="Tempo de Geração da Página URL" >
+                    <label for="tempo_url"> <strong> Tempo de Geração da Página URL</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="idioma_navegador" name="idioma_navegador" value="Idioma do Navegador do Usuário" >
+                    <label for="idioma_navegador"> <strong> Idioma do Navegador do Usuário</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="versao_navegador" name="versao_navegador" value="Versão do Navegador" >
+                    <label for="versao_navegador"> <strong> Versão do Navegador</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="plugins_navegador" name="plugins_navegador" value="Plugins do Navegador" >
+                    <label for="plugins_navegador"> <strong> Plugins do Navegador</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="sistema_operacional_navegador" name="sistema_operacional_navegador" value="Sistema Operacional do Navegador" >
+                    <label for="sistema_operacional_navegador"> <strong> Sistema Operacional do Navegador</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="identificador_dispositivo_usuário" name="identificador_dispositivo_usuário" value="Identificador do Sistema do Dispositivo do Usuário" >
+                    <label for="identificador_dispositivo_usuário"> <strong> Identificador do Sistema do Dispositivo do Usuário</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="idioma_pag_visitada" name="idioma_pag_visitada" value="Idioma da Página Visitada" >
+                    <label for="idioma_pag_visitada"> <strong> Idioma da Página Visitada</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="campanhas" name="campanhas" value="Campanhas" >
+                    <label for="campanhas"> <strong> Campanhas</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="buscas_websites" name="buscas_websites" value="Buscas nos Websites" >
+                    <label for="buscas_websites"> <strong> Buscas nos Websites</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="eventos" name="eventos" value="Eventos" >
+                    <label for="eventos"> <strong> Eventos</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="id_unico_usuario" name="id_unico_usuario" value="ID Uníco do Usuário" >
+                    <label for="id_unico_usuario"> <strong> ID Uníco do Usuário</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="data_primeira_visita" name="data_primeira_visita" value="Data da Primeira Visita do Usuário Específico" >
+                    <label for="data_primeira_visita"> <strong> Data da Primeira Visita do Usuário Específico</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="data_ultima_visita" name="data_ultima_visita" value="Data da Ultima Visita do Usuário Específico" >
+                    <label for="data_ultima_visita"> <strong> Data da Ultima Visita do Usuário Específico</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+                <div id="campo0">
+
+                    <input type="checkbox" id="nº_visitas" name="nº_visitas" value="Número de Visitas do Usuário Específico" >
+                    <label for="nº_visitas"> <strong> Número de Visitas do Usuário Específico</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            
+            <button type="button" class="outline" onclick="setores()">Avançar</button>
+
+        </form>
+
+        <script src="index.js"></script>
+
+        <script>
+            var razao_social = document.getElementById('razao_social');
+            var cnpj = document.getElementById('cnpj');
+
+            razao_social.addEventListener('focus', ()=>{
+                razao_social.style.borderColor = "#4a5f6a"
+            })
+            cnpj.addEventListener('focus', ()=>{
+                cnpj.style.borderColor = "#4a5f6a"
+            })
+        </script>
+    </body>
+</html>

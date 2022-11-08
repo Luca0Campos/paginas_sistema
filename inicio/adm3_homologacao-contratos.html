@@ -1,0 +1,342 @@
+<html>
+    <head>
+        <title> adm_homologacao-contratos </title>
+    </head>
+    <style>
+         *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: black;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;
+
+        }
+
+
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+
+        #art{
+            float: right;
+            
+        }
+
+
+        .container{
+            display: flex;
+            padding-top: 2%;
+        }
+        #campo0{
+            width: 25%;
+            display: inline-block;
+        }
+
+        #campo{
+            width: 25%;
+            display: inline-block;
+        }
+        #campo1{
+            width: 25%;
+            display: inline-block;
+            
+        }
+        #campo2_1{
+            
+            display: inline-block;
+        }
+        #campo2_2{
+            display: inline-block;
+        }
+        #campo2_3{
+            
+            display: inline-block;
+        }
+        #campo2_4{
+            
+            display: inline-block;
+        }
+        
+          
+        
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>ADM: Homologação de Contratos</h3>
+            </div>
+            <div class="container">
+                <div id="campo0">
+                    <label id="dado_pessoal" for="dado_pessoal" name="dado_pessoal"> <strong> Dado Pessoal</strong></label>
+                </div>
+                <div id="campo">
+                    <label id="dado_sensivel" for="dado_sensivel" name="dado_sensivel"> <strong> Dado Sensível?</strong></label>
+                </div>
+                <div id="campo1">
+                    <label id="dado_pessoal_crianca" for="dado_pessoal_crianca" name="dado_pessoal_crianca"> <strong> Dado Pessoal Criança?</strong></label>
+                </div>
+                <div id="campo2_1">
+                    <label id="local_coleta" for="local_coleta" name="local_coleta"> <strong> Local de Coleta</strong></label>
+                </div>
+            </div>
+            
+            <div class="container">
+
+                <div id="campo0">
+                    <input type="checkbox" id="nome" name="nome" value="Nome" >
+                    <label for="nome"> <strong> Nome </strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+
+                <div id="campo0">
+                    <input type="checkbox" id="cpf" name="cpf" value="CPF" >
+                    <label for="cpf"> <strong> CPF </strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+
+                <div id="campo0">
+                    <input type="checkbox" id="end" name="end" value="Endereço" >
+                    <label for="end"> <strong> Endereço</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+
+                <div id="campo0">
+                    <input type="checkbox" id="cnpj" name="cnpj" value="CNPJ" >
+                    <label for="cnpj"> <strong> CNPJ </strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+
+                <div id="campo0">
+                    <input type="checkbox" id="nome_representante" name="nome_representante" value="Nome do Representante" >
+                    <label for="nome_representante"> <strong>Nome do Representante</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+
+                <div id="campo0">
+                    <input type="checkbox" id="cpf_representante" name="cpf_representante" value="CPF do Representante" >
+                    <label for="cpf_representante"> <strong> CPF do Representante</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            <div class="container">
+
+                <div id="campo0">
+
+                    <input type="checkbox" id="rpa_rd" name="rpa_rd" value="RPA e RD" >
+                    <label for="rpa_rd"> <strong> RPA e RD</strong></label>
+                </div>
+                <div id="campo">        
+                    <input type="checkbox" id="yes1" name="yes1" value="Sim" > <strong>SIM</strong>
+                </div>
+                <div id="campo1">
+                    <input type="checkbox" id="yes2" name="yes2" value="Sim" > <strong>SIM</strong> 
+                </div>
+                <div id="campo2_1">    
+                    <input type="checkbox" id="email" name="email" value="Email" > <strong>Email</strong> 
+                </div>
+                <div id="campo2_2">    
+                    <input type="checkbox" id="whatsapp" name="whatsapp" value="WhatsApp" > <strong>WhatsApp</strong> 
+                </div>
+                <div id="campo2_3">    
+                    <input type="checkbox" id="sistema" name="sistema" value="Sistema" > <strong>Sistema</strong> 
+                </div>
+                <div id="campo2_4">    
+                    <input type="checkbox" id="fisico" name="fisico" value="Fisíco" > <strong>Fisíco</strong> 
+                </div>
+                
+            </div>
+            
+            <button type="button" class="outline" onclick="setores()">Avançar</button>
+
+        </form>
+
+        <script src="index.js"></script>
+
+        <script>
+            var razao_social = document.getElementById('razao_social');
+            var cnpj = document.getElementById('cnpj');
+
+            razao_social.addEventListener('focus', ()=>{
+                razao_social.style.borderColor = "#4a5f6a"
+            })
+            cnpj.addEventListener('focus', ()=>{
+                cnpj.style.borderColor = "#4a5f6a"
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,170 @@
+<html>
+    <head>
+        <title> RH - Atividade </title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: green;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+ 
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Recursos Humanos</h3>
+                <p>Qual tipo de contrato? </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="cadastro_sistema_governo" name="cadastro_sistema_governo" value="Cadastro em Sistema de Governo" >
+                <label for="cadastro_sistema_governo"> <strong> Cadastro em Sistema de Governo </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="ficha_consulta" name="ficha_consulta" value="Ficha de Consulta" >
+                <label for="ficha_consulta"> <strong> Ficha de Consulta </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="ficha_cadastral" name="ficha_cadastral" value="Ficha Cadastral" >
+                <label for="ficha_cadastral"> <strong> Ficha Cadastral </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="ficha_atualizacao" name="ficha_atualizacao" value="Ficha de Atualização" >
+                <label for="ficha_atualizacao"> <strong> Ficha de Atualização </strong></label>
+                <hr>
+                </div>
+
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+       function setores(){
+           
+           let checkBoxes = document.querySelectorAll(".checkbox");
+           let cadastro_sistema_governo_check = document.getElementById("cadastro_sistema_governo");
+           let ficha_consulta_check = document.getElementById("ficha_consulta");
+           let ficha_cadastral_check = document.getElementById("ficha_cadastral");
+           let ficha_atualizacao_check = document.getElementById("ficha_atualizacao");
+
+           
+       
+
+           checkBoxes.forEach((checkBoxe) => {
+
+               if(checkBoxe.checked === true){
+
+                   if(cadastro_sistema_governo_check.checked === true){
+                       window.location.href = "rh2_ver-cad.html"
+                   };
+                   if(ficha_consulta_check.checked === true){
+                       window.location.href = "rh2_ver-cad.html"
+                   };
+                   if(ficha_cadastral_check.checked === true){
+                       window.location.href = "rh3_att-dados-cads.html"
+                   };
+                   if(ficha_atualizacao_check.checked === true){
+                       window.location.href = "rh3_att-dados-cads.html" 
+                   };
+                 
+               }    
+           })
+
+
+       }
+
+       botao.addEventListener("click", setores)
+        </script>
+    </body>
+</html>

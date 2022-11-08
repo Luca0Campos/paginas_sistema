@@ -1,0 +1,251 @@
+<html>
+    <head>
+        <title> Administrativo </title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: green;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+        
+          
+        
+     
+
+            
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Administrativo</h3>
+                <p>No setor Administrativo de sua empresa tem: </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="resc_contratos" name="resc_contratos" value="Rescisão de Contratos" >
+                <label for="resc_contratos"> <strong> Rescisão de Contratos</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="homolo_contratos" name="homolo_contratos" value="Homologação de Contratos" >
+                <label for="homolo_contratos"> <strong>Homologação de Contratos</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="elaboracao_contratos" name="elaboracao_contratos" value="Elaboracao Contratos" >
+                <label for="elaboracao_contratos"> <strong>Elaboracao Contratos</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="orcamento" name="orcamento" value="Orçamento" >
+                <label for="orcamento"> <strong> Orçamento</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="att_cad" name="att_cad" value="Atualização de Contrato Mailing" >
+                <label for="att_cad"> <strong>Atualização de Contrato Mailing</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="auten_dirigentes" name="auten_dirigentes" value="Autenticação de Dirigententes da Associada" >
+                <label for="auten_dirigentes"> <strong>Autenticação de Dirigententes da Associada</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="cad_associada_mailing" name="cad_associada_mailing" value="Cadastrar Associada no Mailing" >
+                <label for="cad_associada"> <strong>Cadastrar Associada no Mailing</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="cad_novas_associadas" name="cad_novas_associadas" value="Cadastro de Novas Associadas" >
+                <label for="cad_novas_associadas"> <strong>Cadastro de Novas Associadas</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="cad_contato_entidade_sistema" name="cad_contato_entidade_sistema" value="Cadastrar o Contato da Entidade no Sistema para a Realização de Contatos pela Associação" >
+                <label for="cad_contato_entidade_sistema"> <strong>Cadastrar o Contato da Entidade no Sistema para a Realização de Contatos pela Associação</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="organizacao_eventos" name="organizacao_eventos" value="Organização de Eventos" >
+                <label for="organizacao_eventos"> <strong>Organização de Eventos</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="registro_ata" name="registro_ata" value="Registro da ATA de Assembleia em Cartório" >
+                <label for="registro_ata"> <strong>Registro da ATA de Assembleia em Cartório</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="realizacao_assembleias" name="realizacao_assembleias" value="Realização de Assembleias Gerais" >
+                <label for="realizacao_assembleias"> <strong>Realização de Assembleias Gerais</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="contratar_fornecedor" name="contratar_fornecedor" value="Contratar Fornecedor" >
+                <label for="contratar_fornecedor"> <strong>Contratar Fornecedor</strong></label>
+                <hr>
+
+                </div>
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+       function setores(){
+           
+           let checkBoxes = document.querySelectorAll(".checkbox");
+           let resc_contratos_check = document.getElementById("resc_contratos");
+           let homolo_contratos_check = document.getElementById("homolo_contratos");
+           let elaboracao_contratos_check = document.getElementById("elaboracao_contratos");
+           let orcamento_check= document.getElementById("orcamento");
+           let att_cad_check = document.getElementById("att_cad");
+           let auten_dirigentes_check= document.getElementById("auten_dirigentes");
+           let cad_associada_mailing_check= document.getElementById("cad_associada_mailing");
+           let cad_novas_associadas= document.getElementById("cad_novas_assosciadas");
+           let cad_contato_entidade_sistema_check= document.getElementById("cad_contato_entidade_sistema");
+           let organizacao_eventos_check= document.getElementById("organizacao_eventos");
+           let registro_ata_check= document.getElementById("registro_ata");
+           let realizacao_assembleias_check= document.getElementById("realizacao_assembleias");
+           let contratar_fornecedor_check= document.getElementById("contratar_fornecedor");
+
+           
+       
+
+           checkBoxes.forEach((checkBoxe) => {
+
+               if(checkBoxe.checked === true){
+
+                   if(resc_contratos_check.checked === true){
+                       window.location.href = "adm2_rescisao-contratos.html"
+                   };
+                   if(homolo_contratos_check.checked === true){
+                       window.location.href = "adm3_homologacao-contratos.html"
+                   };
+                   if(elaboracao_contratos_check.checked === true){
+                       window.location.href = "adm4_elab-contrattos.html"
+                   };
+                   if(orcamento_check.checked === true){
+                       window.location.href = "adm5_orcamento.html"
+                   };
+                   if(att_cad_check.checked === true){
+                       window.location.href = "adm6_att-cad-mailing.html"
+                   };
+                   if(auten_dirigentes_check.checked === true){
+                       window.location.href = "adm7_autenticacao_dirigentes.html"
+                   };
+                   if(cad_associada_mailing_check.checked === true){
+                       window.location.href = "adm8_cadastrar_asso_mailing.html"
+                   };
+                   if(cad_novas_associadas.checked === true){
+                       window.location.href = "adm9_cad-new-associadas.html"
+                   };
+                   if(cad_contato_entidade_sistema_check.checked === true){
+                       window.location.href = "adm10_cad-contato-entidade.html"
+                   };
+
+                   if(organizacao_eventos_check.checked === true){
+                       window.location.href = "adm11_organizacao_eventos.html"
+                   };
+
+                   if(registro_ata_check.checked === true){
+                       window.location.href = "adm12_registro_ata.html"
+                   };
+
+                   if(realizacao_assembleias_check.checked === true){
+                       window.location.href = "adm13_assembleias-gerais.html"
+                   };
+
+                   if(contratar_fornecedor.checked === true){
+                       window.location.href = "adm14_contratar-fornecedor.html"
+                   };
+
+
+                 
+               }    
+           })
+
+
+       
+
+       }
+
+       botao.addEventListener("click", setores)
+        </script>
+    </body>
+</html>

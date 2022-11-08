@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <title> RH </title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: green;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+        
+          
+        
+     
+
+            
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Recursos Humanos</h3>
+                <p>No setor de Recursos Humanos de sua empresa tem: </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="ver_cadas" name="ver_cadas" value="Verificação Cadastral" >
+                <label for="ver_cadas"> <strong> Verificação cadastral do fúncionário junto aos órgão do Poder Público</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="att_dados" name="att_dados" value="Atualização de Dados Cadastrais" >
+                <label for="att_dados"> <strong> Atualização de Dados Cadastrais</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="pag_res" name="pag_res" value="Pagamento de encargos trabalhistas e Rescisão de contrato de trabalho" >
+                <label for="pag_res"> <strong> Pagamento de encargos trabalhistas e Rescisão de contrato de trabalho</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="new_fun" name="new_fun" value="Contratação de novo funcionário" >
+                <label for="new_fun"> <strong> Contratação de novo funcionário</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="reg_ponto" name="reg_ponto" value="Apuração e coleta de marcações do Registro Eletrônico do Ponto, manual ou mecanico" >
+                <label for="reg_ponto"> <strong> Apuração e coleta de marcações do Registro Eletrônico do Ponto, manual ou mecanico</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="dirf" name="dirf" value="Emissão de DIRF" >
+                <label for="dirf"> <strong> Emissão de DIRF</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="proc_sele" name="proc_sele" value="Realização de processo seletivo" >
+                <label for="proc_sele"> <strong> Realização de processo seletivo</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="promo_func" name="promo_func" value="Promoção de Funcionário" >
+                <label for="promo_func"> <strong> Promoção de Funcionário</strong></label>
+                <hr>
+
+                </div>
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+
+        <script src="index.js"></script>
+
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+       function setores(){
+           
+           let checkBoxes = document.querySelectorAll(".checkbox");
+           let ver_cadas_check = document.getElementById("ver_cadas");
+           let att_dados_check = document.getElementById("att_dados");
+           let pag_res_check = document.getElementById("pag_res");
+           let reg_ponto_check= document.getElementById("reg_ponto");
+           let dirf_check = document.getElementById("dirf");
+           let proc_sele_check= document.getElementById("proc_sele");
+           let promo_func_check = document.getElementById("promo_func")
+           let new_fun_check = document.getElementById("new_fun")
+
+           
+       
+
+           checkBoxes.forEach((checkBoxe) => {
+
+               if(checkBoxe.checked === true){
+
+                   if(ver_cadas_check.checked === true){
+                       window.location.href = "rh2_ver-cad.html"
+                   };
+                   if(att_dados_check.checked === true){
+                       window.location.href = "rh3_att-dados-cads.html"
+                   };
+                   if(pag_res_check.checked === true){
+                       window.location.href = "rh4_resci-trab.html"
+                   };
+                   if(reg_ponto_check.checked === true){
+                       window.location.href = "rh6_regis-ponto.html"
+                   };
+                   if(dirf_check.checked === true){
+                       window.location.href = "rh7_dirf.html"
+                   };
+                   if(proc_sele_check.checked === true){
+                       window.location.href = "rh8_processo-seletivo.html"
+                   };
+                   if(new_fun_check.checked === true){
+                       window.location.href = "rh5_new-fun.html"
+                   };
+                   if(promo_func_check.checked === true){
+                       window.location.href = "rh9_promo-funcionario.html"
+                   };
+                 
+               }    
+           })
+
+
+       
+
+       }
+
+       botao.addEventListener("click", setores)
+        </script>
+    </body>
+</html>

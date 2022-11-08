@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <title> Departamento Pessoal </title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: green;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+        
+          
+        
+     
+
+            
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Departamento Pessoal</h3>
+                <p>No Departamento Pessoal de sua empresa tem: </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="irrf" name="irrf" value="Apuração de IRRF" >
+                <label for="irrf"> <strong>Apuração de IRRF</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="att_dados_funcionarios" name="att_dados_funcionarios" value="Atualização de Dados de Funcionários" >
+                <label for="att_dados_funcionarios"> <strong> Atualização de Dados de Funcionários</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="ex_colaborador" name="ex_colaborador" value="Apuração do Exercício Completo de Cada Colaborador e Pro Labore" >
+                <label for="ex_colaborador"> <strong> Apuração do Exercício Completo de Cada Colaborador e Pro Labore</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="new_fun_cliente" name="new_fun_cliente" value="Contratação de novo funcionário pelo Cliente" >
+                <label for="new_fun_cliente"> <strong>Contratação de novo funcionário pelo Cliente</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="contratar_fun_cliente" name="contratar_fun_cliente" value="Contratação de funcionário pelo Cliente" >
+                <label for="contratar_fun_cliente"> <strong>Contratação de funcionário pelo Cliente</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="demissao_fun_cliente" name="demissao_fun_cliente" value="Demissão de Funcionário pelo Cliente" >
+                <label for="demissao_fun_cliente"> <strong>Demissão de Funcionário pelo Cliente</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="fechamento_folha_cliente" name="fechamento_folha_cliente" value="Fechamento de Folha do Cliente" >
+                <label for="fechamento_folha_cliente"> <strong>Fechamento de Folha do Cliente</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="reg_ponto" name="reg_ponto" value="Apuração e coleta de marcações do Registro Eletrônico do Ponto, manual ou mecanico" >
+                <label for="reg_ponto"> <strong> Apuração e coleta de marcações do Registro Eletrônico do Ponto, manual ou mecanico</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="dirf" name="dirf" value="Emissão de DIRF" >
+                <label for="dirf"> <strong> Emissão de DIRF</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="rais" name="rais" value="Emissão de RAIS" >
+                <label for="rais"> <strong> Emissão de RAIS</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="provisio_pagamentos" name="provisio_pagamentos" value="Provisionamento de Pagamentos" >
+                <label for="provisio_pagamentos"> <strong> Provisionamento de Pagamentos</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="processamento_folha_cliente" name="processamento_folha_cliente" value="Processamento da Folha do Cliente" >
+                <label for="processamento_folha_cliente"> <strong> Processamento da Folha do Cliente</strong></label>
+                <hr>
+
+                
+                <input type="checkbox" class="checkbox" id="relatorio_folha_pagamento" name="relatorio_folha_pagamento" value="Emissão do Relatório da Folha de Pagamento" >
+                <label for="relatorio_folha_pagamento"> <strong> Emissão do Relatório da Folha de Pagamento</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="processo_ferias" name="processo_ferias" value="Processamento de Ferias" >
+                <label for="processo_ferias"> <strong>Processamento de Ferias</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="rescisao_desligamento" name="rescisao_desligamento" value="Rescisão Trabalhista/Desligamento de Funcionário pelo Cliente" >
+                <label for="processamento_folha_cliente"> <strong> Rescisão Trabalhista/Desligamento de Funcionário pelo Cliente</strong></label>
+                <hr>
+
+
+                </div>
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+       function setores(){
+           
+           let checkBoxes = document.querySelectorAll(".checkbox");
+           let irrf_check = document.getElementById("irrf");
+           let att_dados_funcionarios_check = document.getElementById("att_dados_funcionarios");
+           let ex_colaborador_check = document.getElementById("ex_colaborador");
+           let new_fun_cliente_check= document.getElementById("new_fun_cliente");
+           let contratar_fun_cliente_check = document.getElementById("contratar_fun_cliente");
+           let demissao_fun_cliente_check= document.getElementById("demissao_fun_cliente");
+           let fechamento_folha_cliente_check= document.getElementById("fechamento_folha_cliente");
+           let reg_ponto_check= document.getElementById("reg_ponto");
+           let dirf_check= document.getElementById("dirf");
+           let rais_check= document.getElementById("rais");
+           let provisio_pagamentos_check= document.getElementById("provisio_pagamentos");
+           let processamento_folha_cliente_check= document.getElementById("processamento_folha_cliente");
+           let relatorio_folha_pagamento_check= document.getElementById("relatorio_folha_pagamento");
+           let processo_ferias_check= document.getElementById("processo_ferias");
+           let rescisao_desligamento_check= document.getElementById("rescisao_desligamento");
+
+           
+       
+
+           checkBoxes.forEach((checkBoxe) => {
+
+               if(checkBoxe.checked === true){
+
+                   if(irrf_check.checked === true){
+                       window.location.href = "dp2_irrf.html"
+                   };
+                   if(att_dados_funcionarios_check.checked === true){
+                       window.location.href = "dp3_alteracao-dados-func.html"
+                   };
+                   if(ex_colaborador_check.checked === true){
+                       window.location.href = "dp4_apuracao-ex-colaborador.html"
+                   };
+                   if(new_fun_cliente_check.checked === true){
+                       window.location.href = "dp5_contratacao_new_func_cliente.html"
+                   };
+                   if(contratar_fun_cliente_check.checked === true){
+                       window.location.href = "dp6_contratacao_fun_cliente.html"
+                   };
+                   if(demissao_fun_cliente_check.checked === true){
+                       window.location.href = "dp7_demissao_func_cliente.html"
+                   };
+                   if(fechamento_folha_cliente_check.checked === true){
+                       window.location.href = "dp8_fecha_folha_cliente.html"
+                   };
+                   if(reg_ponto_check.checked === true){
+                       window.location.href = "dp9_coleta_pontos.html"
+                   };
+                   if(dirf_check.checked === true){
+                       window.location.href = "dp10_dirf.html"
+                   };
+
+                   if(rais_check.checked === true){
+                       window.location.href = "dp11_rais.html"
+                   };
+
+                   if(provisio_pagamentos_check.checked === true){
+                       window.location.href = "dp12_pagamentos.html"
+                   };
+
+                   if(processamento_folha_cliente_check.checked === true){
+                       window.location.href = "dp13_process_folha_cliente.html"
+                   };
+
+                   if(relatorio_folha_pagamento_check.checked === true){
+                       window.location.href = "dp14_folha-pagamento.html"
+                   };
+                   if(processo_ferias_check.checked === true){
+                       window.location.href = "dp15_process_ferias.html"
+                   };
+                   if(rescisao_desligamento_check.checked === true){
+                       window.location.href = "dp16_desligamento_cliente.html"
+                   };
+
+
+                 
+               }    
+           })
+
+
+       
+
+       }
+
+       botao.addEventListener("click", setores)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <title> Jurídico</title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: black;
+            border-radius: 5px;
+
+            
+        
+            
+        }
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 30;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Jurídico</h3>
+                <p>No setor Jurídico de sua empresa tem: </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="analise_instr_contra" name="analise_instr_contra" value="Análise de Instrumentos Contratuais" >
+                <label for="analise_instr_contra"> <strong>Análise de Instrumentos Contratuais </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="defender_interesses" name="defender_interesses" value="Defender Interesses da Entidade em Processos " >
+                <label for="defender_interesses"> <strong> Defender Interesses da Entidade em Processos </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="outorga" name="outorga" value="Outorga de Poderes" >
+                <label for="outorga"> <strong> Outorga de Poderes</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="contrato_fornecedores" name="contrato_fornecedores" value="Contrato Fornecedores" >
+                <label for="contrato_fornecedores"> <strong> Contrato Fornecedores </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="rescisao_contrato_fornecedores" name="rescisao_contrato_fornecedores" value="Rescisão de Contrato de Fornecedores" >
+                <label for="rescisao_contrato_fornecedores"> <strong> Rescisão de Contrato de Fornecedores </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="demandas_judiciais" name="demandas_judiciais" value="Atuação em Demandas Judiciais/Extrajudiciais" >
+                <label for="demandas_judiciais"> <strong> Atuação em Demandas Judiciais/Extrajudiciais</strong></label>
+                <hr>
+
+
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+        function setores(){
+           
+           let checkBoxes = document.querySelectorAll(".checkbox");
+           let analise_instr_contra_check= document.getElementById("analise_instr_contra");
+           let defender_interesses_check = document.getElementById("defender_interesses");
+           let outorga_check= document.getElementById("outorga");
+           let contrato_fornecedores_check= document.getElementById("contrato_fornecedores");
+           let rescisao_contrato_fornecedores_check = document.getElementById("rescisao_contrato_fornecedores");
+           let demandas_judiciais_check = document.getElementById("demandas_judiciais");
+           
+           
+       
+
+           checkBoxes.forEach((checkBoxe) => {
+
+               if(checkBoxe.checked === true){
+
+                   if(analise_instr_contra_check.checked === true){
+                       window.location.href = "juridico2_analise_instr_contra.html"
+                   };
+
+                   if(defender_interesses_check.checked === true){
+                       window.location.href = "juridico3_defender_interesses.html"
+                   };
+
+                   if(outorga_check.checked === true){
+                       window.location.href = "juridico4_outorga.html"
+                   };
+                   if(contrato_fornecedores_check.checked === true){
+                       window.location.href = "juridico5_contratos_fornecedores.html"
+                   };
+                   if(rescisao_contrato_fornecedores_check.checked === true){
+                       window.location.href = "juridico6_rescisao_contratos_forne.html"
+                   };
+                   if(demandas_judiciais_check.checked === true){
+                       window.location.href = "juridico7_atuacao_demandas_judi_extra.html"
+                   };
+                 
+               }    
+           })
+
+
+       
+
+       }
+
+       botao.addEventListener("click", setores)
+        </script>
+    </body>
+</html>

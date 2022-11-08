@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <title> Facilities</title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: green;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 120;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+        
+          
+        
+     
+
+            
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Facilities</h3>
+                <p>No setor de Compras de sua empresa tem: </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="controle_acesso_recepcao" name="controle_acesso_recepcao" value="Controle de Acesso na Recepção" >
+                <label for="controle_acesso_recepcao"> <strong> Controle de Acesso na Recepção</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="gravacao_imagens" name="gravacao_imagens" value="Gravação de Imagens" >
+                <label for="gravacao_imagens"> <strong> Gravação de Imagens</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="controle_acesso_portaria" name="controle_acesso_portaria" value="Controle de Acesso na Portaria" >
+                <label for="controle_acesso_portaria"> <strong>Controle de Acesso na Portaria </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="controle_acesso_garagem" name="controle_acesso_garagem" value="Controle de Acesso para a Garagem" >
+                <label for="controle_acesso_garagem"> <strong> Controle de Acesso para a Garagem</strong></label>
+                <hr>
+
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+       function setores(){
+          
+          let checkBoxes = document.querySelectorAll(".checkbox");
+          let controle_acesso_recepcao_check = document.getElementById("controle_acesso_recepcao");
+          let gravacao_imagens_check = document.getElementById("gravacao_imagens");
+          let controle_acesso_portaria_check= document.getElementById("controle_acesso_portaria");
+          let controle_acesso_garagem_check= document.getElementById("controle_acesso_garagem");
+          
+          
+          
+      
+
+          checkBoxes.forEach((checkBoxe) => {
+
+              if(checkBoxe.checked === true){
+
+                  if(controle_acesso_recepcao_check.checked === true){
+                      window.location.href = "facilities2_controle_acesso_recepcao.html"
+                  };
+                  if(gravacao_imagens_check.checked === true){
+                      window.location.href = "facilities3_gravacao_imagens.html"
+                  };
+                  if(controle_acesso_portaria_check.checked === true){
+                      window.location.href = "facilities4_controle_acesso_portaria.html"
+                  };
+                  if(controle_acesso_garagem_check.checked === true){
+                      window.location.href = "facilities5_controle_acesso_garagem.html"
+                  };
+              }    
+          })
+
+
+      
+
+      }
+
+      botao.addEventListener("click", setores)
+        </script>
+    </body>
+</html>

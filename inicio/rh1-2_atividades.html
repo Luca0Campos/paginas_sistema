@@ -1,0 +1,210 @@
+<html>
+    <head>
+        <title> RH - Atividade </title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: green;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+        
+          
+        
+     
+
+            
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Recursos Humanos</h3>
+                <p>No setor de Recursos Humanos de sua empresa possui as atividades: </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="rh_verificacao_cadastral" name="rh_verificacao_cadastral" value="RH - Verificação cadastral do funcionário junto aos órgãos do Poder Público" >
+                <label for="rh_verificacao_cadastral"> <strong> RH - Verificação cadastral do funcionário junto aos órgãos do Poder Público </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="rh_atualização_dados_cadastrais" name="rh_atualização_dados_cadastrais" value="Atualização de Dados Cadastrais" >
+                <label for="rh_atualização_dados_cadastrais"> <strong>RH - Atualização de Dados Cadastrais </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="desligamento" name="desligamento" value="Desligamento" >
+                <label for="desligamento"> <strong> Desligamento </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="contratacao_novo_funcionario" name="contratacao_novo_funcionario" value="Contratação de Novo Funcionário" >
+                <label for="contratacao_novo_funcionario"> <strong> Contratação de Novo Funcionário </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="contratacao_funcionario_processo_seletivo" name="contratacao_funcionario_processo_seletivo" value="Contratação de Funcionário - Realização de Processo Seletivo" >
+                <label for="contratacao_funcionario_processo_seletivo"> <strong> Contratação de Funcionário - Realização de Processo Seletivo </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="folha_pagamento" name="folha_pagamento" value="Folha de Pagamento" >
+                <label for="folha_pagamento"> <strong> Folha de Pagamento </strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="processamento_fiscal" name="processamento_fiscal" value="Procesamento Fiscal" >
+                <label for="processamento_fiscal"> <strong> Procesamento Fiscal</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="promocao_colaborador" name="promocao_colaborador" value="Promoção de Colaborador" >
+                <label for="promocao_colaborador"> <strong> Promoção de Colaborador</strong></label>
+                <hr>
+
+                </div>
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+       function setores(){
+           
+           let checkBoxes = document.querySelectorAll(".checkbox");
+
+           let rh_verificacao_cadastral_check = document.getElementById("rh_verificacao_cadastral");
+           let rh_atualização_dados_cadastrais_check = document.getElementById("rh_atualização_dados_cadastrais");
+
+           let desligamento_check = document.getElementById("desligamento");
+
+           let contratacao_novo_funcionario_check = document.getElementById("contratacao_novo_funcionario");
+           let contratacao_funcionario_processo_seletivo_check = document.getElementById("contratacao_funcionario_processo_seletivo");
+
+           let folha_pagamento_check= document.getElementById("folha_pagamento");
+           let processamento_fiscal_check = document.getElementById("processamento_fiscal");
+           let promocao_colaborador= document.getElementById("promocao_colaborador");
+
+           
+       
+
+           checkBoxes.forEach((checkBoxe) => {
+
+               if(checkBoxe.checked === true){
+
+                   if(rh_verificacao_cadastral_check.checked === true){
+                       window.location.href = "rh1-3_contratos_rh.html"
+                   };
+                   if(rh_atualização_dados_cadastrais_check.checked === true){
+                       window.location.href = "rh1-3_contratos_rh.html"
+                   };
+                   if(desligamento_check.checked === true){
+                       window.location.href = "rh1-3_desligamento.html"
+                   };
+                   if(contratacao_novo_funcionario_check.checked === true){
+                       window.location.href = "rh1-3_contratos_contratacao_funcionario.html"; 
+                   };
+                   if(contratacao_funcionario_processo_seletivo_check.checked === true){
+                       window.location.href = "rh1-3_contratos_processo_seletivo.html"; 
+                   };
+                   
+                   if(folha_pagamento_check.checked === true){
+                       window.location.href = "rh1-3_folha_pagamento.html"
+                   };
+                   if(processamento_fiscal_check.checked === true){
+                       window.location.href = "rh1-3_processamento_fiscal.html"
+                   };
+                   if(promocao_colaborador.checked === true){
+                       window.location.href = "rh9_promo-funcionario.html"
+                   };
+                 
+               }    
+           })
+
+
+       
+
+       }
+
+       botao.addEventListener("click", setores)
+        </script>
+    </body>
+</html>

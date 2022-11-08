@@ -1,0 +1,289 @@
+<html>
+    <head>
+        <title> Setores</title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: black;
+            border-radius: 5px;
+
+            
+        
+            
+        }
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 30;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }
+        
+        form text{
+            width: 100%;
+            height: 45px;
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 18px;
+            margin-top: 10;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+        }
+
+        .form-control input{
+            width: 300px;
+            height: 27px;
+            border: 1px solid #ccc;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+     
+
+            
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Selecione os setores de sua empresa:</h3>
+                
+                
+            </div>
+            
+            
+            <div id="check">
+                <hr>
+                <input type="checkbox" class="checkbox" id="comercial" name="comercial" value="Comercial" >
+                <label for="comercial"> <strong> Comercial </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="rh" name="rh" value="Recursos Humanos" >
+                <label for="rh"> <strong> Recursos Humanos </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="adm" name="adm" value="Administrativo" >
+                <label for="adm"> <strong>Administrativo</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="compras" name="compras" value="Compras" >
+                <label for="compras"> <strong>Compras</strong> </label>
+
+                <hr>
+                <input type="checkbox" class="checkbox" id="contabil" name="contabil" value="Contabil" >
+                <label for="contabil"><strong>Contabil</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="contabilidade" name="contabilidade" value="Contabilidade" >
+                <label for="contabilidade"><strong>Contabilidade</strong></label>
+
+                <hr>
+                <input type="checkbox" class="checkbox" id="dp" name="dp" value="Departamento Pessoal" >
+                <label for="dp"><strong>Departamento Pessoal</strong></label>
+
+                <hr>    
+                <input type="checkbox" class="checkbox" id="financeiro" name="financeiro" value="Financeiro" >
+                <label for="financeiro"><strong>Financeiro</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="fiscal" name="fiscal" value="Fiscal" >
+                <label for="fiscal"><strong>Fiscal</strong></label>
+                <hr>    
+                <input type="checkbox" class="checkbox" id="juridico" name="juridico" value="Jurídico" >
+                <label for="juridico"><strong>Jurídico</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="societario" name="societario" value="Societário" >
+                <label for="societario"><strong>Societário</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="facilities" name="facilities" value="Facilities" >
+                <label for="facilities"><strong>Facilities</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="ti" name="ti" value="TI" >
+                <label for="ti"><strong>TI</strong></label>
+                <hr>        
+                <input type="checkbox" class="checkbox" id="operacional" name="operacional" value="Operacional" >
+                <label for="operacional"><strong>Operacional</strong></label>     
+                <hr>
+                
+                <form id="form" class="form"></form>
+                    <div class="form-control">
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+                        <hr>
+                        <input type="text" id="digite_setor" placeholder="Digite algum setor de sua empresa..." required/>
+
+                    </div>
+                </form>
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+
+        <script>
+        
+        let botao = document.getElementById("send");
+  
+        function setores(){
+            
+            let checkBoxes = document.querySelectorAll(".checkbox");
+            let rh_check = document.getElementById("rh");
+            let operacional_check = document.getElementById("operacional");
+            let tecnologia_informacao = document.getElementById("ti");
+            let setor_comercial = document.getElementById("comercial")
+            let setor_administrativo = document.getElementById("adm")
+            let setor_compras = document.getElementById("compras")
+            let setor_contabil = document.getElementById("contabil")
+            let setor_contabilidade = document.getElementById("contabilidade")
+            let departamento_pessoal = document.getElementById("dp")
+            let setor_financeiro = document.getElementById("financeiro")
+            let setor_fiscal = document.getElementById("fiscal")
+            let setor_juridico = document.getElementById("juridico")
+            let setor_societario = document.getElementById("societario")
+            let setor_facilities = document.getElementById("facilities")
+
+
+
+            checkBoxes.forEach((checkBoxe) => {
+
+                if(checkBoxe.checked === true){
+
+                    if(rh_check.checked === true){
+                        window.location.href = "rh1-2_atividades.html"
+                    };
+                    if(operacional_check.checked === true){
+                        window.location.href = "operacional1.html"
+                    };
+                    if(tecnologia_informacao.checked === true){
+                        window.location.href = "ti1.html"
+                    };
+                    if(setor_comercial.checked === true){
+                        window.location.href = "comercial1.html"
+                    };
+                    if(setor_administrativo.checked === true){
+                        window.location.href = "adm1.html"
+                    };
+                    if(setor_compras.checked === true){
+                        window.location.href = "compras1.html"
+                    };
+                    if(setor_contabil.checked === true){
+                        window.location.href = "contabil1.html"
+                    };
+                    if(setor_contabilidade.checked === true){
+                        window.location.href = "contabilidade1.html"
+                    };
+                    if(departamento_pessoal.checked === true){
+                        window.location.href = "dp1.html"
+                    };
+                    if(setor_financeiro.checked === true){
+                        window.location.href = "financeiro1.html"
+                    };
+                    if(setor_fiscal.checked === true){
+                        window.location.href = "fiscal1.html"
+                    };
+                    if(setor_juridico.checked === true){
+                        window.location.href = "juridico1.html"
+                    };
+                    if(setor_societario.checked === true){
+                        window.location.href = "societario1.html"
+                    };
+                    if(setor_facilities.checked === true){
+                        window.location.href = "facilities1.html"
+                    };
+
+                }    
+            })
+
+
+        
+
+        }
+
+        botao.addEventListener("click", setores)
+       
+
+        
+        
+    
+
+
+        </script>
+
+    </body>
+</html>      

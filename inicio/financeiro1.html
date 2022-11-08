@@ -1,0 +1,185 @@
+<html>
+    <head>
+        <title> Financeiro </title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: green;
+            border-radius: 5px;
+
+      
+        }
+
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 5;;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+        
+          
+        
+     
+
+            
+
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Financeiro</h3>
+                <p>No setor Financeiro de sua empresa tem: </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="gerar_boleto" name="gerar_boleto" value="Gerar Boleto" >
+                <label for="gerar_boleto"> <strong>Gerar Boleto</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="gerar_faturamento" name="gerar_faturamento" value="Gerar Faturamento" >
+                <label for="gerar_faturamento"> <strong> Gerar Faturamento</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="pag_fornecedores_colab" name="pag_fornecedores_colab" value="Pagamento de Fornecedores/Colaboradores" >
+                <label for="pag_fornecedores_colab"> <strong>Pagamento de Fornecedores/Colaboradores</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="recibo_pag_autonomo" name="recibo_pag_autonomo" value="Recibo de Pagamento de Autônomo" >
+                <label for="recibo_pag_autonomo"> <strong>Recibo de Pagamento de Autônomo</strong></label>
+                <hr>
+                <input type="checkbox" class="checkbox" id="recibo" name="recibo" value="Recibo" >
+                <label for="recibo"> <strong>Recibo</strong></label>
+                <hr>
+
+
+
+                </div>
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+        function setores(){
+           
+           let checkBoxes = document.querySelectorAll(".checkbox");
+           let gerar_boleto_check = document.getElementById("gerar_boleto");
+           let gerar_faturamento_check = document.getElementById("gerar_faturamento");
+           let pag_fornecedores_colab_check= document.getElementById("pag_fornecedores_colab");
+           let recibo_pag_autonomo_check= document.getElementById("recibo_pag_autonomo");
+           let recibo_check = document.getElementById("recibo");
+           
+           
+       
+
+           checkBoxes.forEach((checkBoxe) => {
+
+               if(checkBoxe.checked === true){
+
+                   if(gerar_boleto_check.checked === true){
+                       window.location.href = "financeiro2_gerar_boleto.html"
+                   };
+                   if(gerar_faturamento_check.checked === true){
+                       window.location.href = "financeiro3_gerar_faturamento.html"
+                   };
+                   if(pag_fornecedores_colab_check.checked === true){
+                       window.location.href = "financeiro4_pagamento_fornece_colabo.html"
+                   };
+                   if(recibo_pag_autonomo_check.checked === true){
+                       window.location.href = "financeiro5_recibo_pag_autonomo_rpa.html"
+                   };
+                   if(recibo_check.checked === true){
+                       window.location.href = "financeiro6_recibo.html"
+                   };
+                 
+               }    
+           })
+
+
+       
+
+       }
+
+       botao.addEventListener("click", setores)
+        </script>
+    </body>
+</html>

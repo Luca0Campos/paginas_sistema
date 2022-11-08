@@ -1,0 +1,179 @@
+<html>
+    <head>
+        <title> Societário</title>
+    </head>
+    <style>
+        *{margin:0; padding: 0; box-sizing: border-box;}
+        body{
+            background-color: grey;
+        }
+        form{
+            background-color: white;
+            max-width: 500%;
+            width: 600;
+            height: 400;
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            overflow-y: scroll;
+            
+        }
+        #titulo{
+            text-align: center;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding-top: 20;
+            background-color: #5f7cba;
+            border-color: black;
+            border-radius: 5px;
+
+            
+        
+            
+        }
+        #titulo p{
+            text-align: justify;
+            padding-top: 20;
+            background-color: whitesmoke;
+            word-spacing: 0;
+            
+        }
+        form checkbox{
+            
+            border: 1px solid #ccc;
+            padding-left: 10px;
+            margin: 15%;
+            margin-top: 10%;
+            
+            
+            
+            
+        }
+        form label{
+            margin-top: 3%;
+            padding-left: 3;
+            padding-bottom: 3cm;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+            
+            
+        }
+
+        form button{
+            width: 100%;
+            height: 30px;
+            cursor: pointer;
+            background: #5f7cba;
+            color: white;
+            border: 0;
+            border-radius: 20px;
+            margin-top: 30;
+
+        }
+
+        #check{   
+            color: black;
+            padding-top: 1;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            margin: 30px 0;
+            word-spacing: 1;
+            border: 1;
+        }   
+
+        form hr{
+            border:0;
+            padding-top: 20;
+
+        }    
+    </style>
+    <body>
+        <form>
+
+            <div id="titulo">            
+                <h3>Societário</h3>
+                <p>No setor de Compras de sua empresa tem: </p>
+                
+                
+            </div>
+            
+            <div id="check">
+                
+                <input type="checkbox" class="checkbox" id="abrir_empresa" name="abrir_empresa" value="Abrir Nova Empresa" >
+                <label for="abrir_empresa"> <strong> Abrir Nova Empresa</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="alteracao_socios" name="alteracao_socios" value="Alteração de Sócios da Empresa" >
+                <label for="alteracao_socios"> <strong> Alteração de Sócios da Empresa</strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="cancelamento_empresa" name="cancelamento_empresa" value="Cancelamento da Empresa" >
+                <label for="cancelamento_empresa"> <strong> Cancelamento da Empresa </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="certificado_digital" name="certificado_digital" value="Emissão de Certificado Digital" >
+                <label for="certificado_digital"> <strong> Emissão de Certificado Digital </strong></label>
+                <hr>
+
+                <input type="checkbox" class="checkbox" id="distribuidor_civil" name="distribuidor_civil" value="Distribuidor Civil:Participação de Licitação Civil, Compra e Venda de Imóveis e Consulta Nome e Debitos" >
+                <label for="distribuidor_civil"> <strong> Processamento Distribuidor Civil:Participação de Licitação Civil, Compra e Venda de Imóveis e Consulta Nome e Debitos</strong></label>
+                <hr>
+
+
+            <button type="button" class="outline" id="send">Avançar</button>
+            </div>
+
+        </form>
+        <script>
+        let botao = document.getElementById("send");
+       
+
+       
+            
+        
+        function setores(){
+          
+          let checkBoxes = document.querySelectorAll(".checkbox");
+          let abrir_empresa_check= document.getElementById("abrir_empresa");
+          let alteracao_socios_check = document.getElementById("alteracao_socios");
+          let cancelamento_empresa_check= document.getElementById("cancelamento_empresa");
+          let certificado_digital_check= document.getElementById("certificado_digital");
+          let distribuidor_civil_check = document.getElementById("distribuidor_civil");
+          
+          
+      
+
+          checkBoxes.forEach((checkBoxe) => {
+
+              if(checkBoxe.checked === true){
+
+                  if(abrir_empresa_check.checked === true){
+                      window.location.href = "societario2_abrir_empresa.html"
+                  };
+
+                  if(alteracao_socios_check.checked === true){
+                      window.location.href = "societario3_alteracao_socios.html"
+                  };
+
+                  if(cancelamento_empresa_check.checked === true){
+                      window.location.href = "societario4_cancelamento_empresa.html"
+                  };
+                  if(certificado_digital_check.checked === true){
+                      window.location.href = "societario5_emissao_certificado.html"
+                  };
+                  if(distribuidor_civil_check.checked === true){
+                      window.location.href = "societario6_distribuidor_civil.html"
+                  };
+                
+                }    
+            })
+  
+        }
+
+        botao.addEventListener("click", setores)
+
+        </script>
+    </body>
+</html>
